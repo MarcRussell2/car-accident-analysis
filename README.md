@@ -64,7 +64,7 @@ unable to normalize (rush hour spikes)
 
 ## Background
 
-As a manager, it is important t
+A
 
 ## The Data
 
@@ -172,6 +172,7 @@ It does seem that there is a statistically significant difference between studen
 [Back to Top](#Table-of-Contents)
 
 # Citation
-*P. Cortez and A. Teixeira Eds., Proceedings of 5th FUturence (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.*
+*Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019.*
 
+*Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, Radu Teodorescu, and Rajiv Ramnath. "Accident Risk Prediction based on Heterogeneous Sparse Data: New Dataset and Insights." In proceedings of the 27th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, ACM, 2019.*
 [Back to Top](#Table-of-Contents)
