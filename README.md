@@ -156,7 +156,7 @@ The locations of each accident were precisesly recorded using geo-positional dat
 <p align="center">
   <img src="main/img/cali_map1.png" width = 400>
   <img src="main/img/nyc_map1.png" width = 400>
-  <img src="main/img/denver_map1.png" width = 400>
+  <img src="main/img/denver_map1.png" width = 550>
 </p>
 
 I quickly became interested in comparing accident counts between states to determine the most and least 'dangerous' states to drive in.  To avoid the naive mistakes mentioned above we will be adjusting the accident counts. One way to adjust the number-of-accidents-per-state is to divide by the state population. This is the approach I will be taking below. 
@@ -164,7 +164,7 @@ I quickly became interested in comparing accident counts between states to deter
 It's important to distinguish the difference before and after the adjustment on number of accidents. The 'unadjusted' graphs below represent the number of accidents for each state over 3.5 years. These values are weighted since each state has a different number of drivers. To remove this population-bias we can divide each state's number of accidents by the population of that state (assumed to be proportional to the # of drivers); dividing by 3.5 will give us a per-year rate. After these adjustment, our value represents the number of accidents per person per year in each state; we will refer to as the *accident rate* from now on.
 
 <p align="center">
-  <img src="main/img/state_acc1.png" width = 400>
+  <img src="main/img/state_acc1.png" width = 700>
 </p>
 
 Top-left notice how California's large population outweighs South Carolina's number of accidents despite there being a lower accident rate in California.
