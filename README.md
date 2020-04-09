@@ -1,33 +1,3 @@
-# car-accident-analysis
----------------------
-# setup car accident dataset
-clean dataset from where
-show date range
-show number of rows and columns
-show column with meaning and examples
-
-
-# state vs state
-how many states of data
-best state
-worst states
-
-# weather analysis
-how many weather conditions in dataset
-meaning of weather stamps
-any correlation to weather?
-rates/distance/severity
-
-# map images
-view denver dangerous roads
-view new york overlay map boroughs
-allow people to go find their accidents
-
-# time of day analysis
-what are the safest and most dangerous times of day?
-unable to normalize (rush hour spikes)
-
-
 # Car Accidents Analysis
 
 <p align="center">
@@ -104,7 +74,7 @@ MVP
 
 ## Feature Categories
 
-* Outcome:
+* Accident Results:
 
        Accident Counts (rows), Severity, Time to Clear, Length of Road Effected, Description
 
@@ -120,18 +90,12 @@ MVP
 
       Latitude, Longitude, State, County, City, Street, Zipcode
 
-n see from both of these plots, the grade features (G1, G2, and G3) are strongly correlated. Since these variables each represent a given students' grade in the class at different periods throughout the year, it seems reasonable to simply use the final grade (G3) for the purposes of this analysis.
 
 ## Exploration
 
-### Weather:
+### __Weather__
 
-Comparing temperature to the number of accidents showed no significant increase at 32<sup>o</sup> F. The plot seems to have a right scew implying that [][][].
-
-<p align="center">
-  <img src="main/img/temp_counts.png" width = 400>
-</p>
-
+#### Weather Condition: 
 A naive analysis of how the weather conditions relate to accident counts would show that there is no significant increase in accident counts during precipitation. By plotting a histogram of the weather condition counts we don't take into consideration that weather conditions are not identically distributed. 
 For example, if it doesn't snow often but there is a high accident rate when it snows, then we will not be able to see this be only observing the accident counts; the snow-accidents are eclipsed by the large number of non-snow-accidents.
 
@@ -139,12 +103,23 @@ For example, if it doesn't snow often but there is a high accident rate when it 
   <img src="main/img/weather_vs_count.png" width = 400>
 </p>
 
+#### Temperature: 
+Does temperature correlate with number of accidents? Is there a spike below 32<sup>o</sup>F?
+
+Comparing temperature to the number of accidents showed no significant increase at 32<sup>o</sup> F. The plot seems to have a right scew implying that [][][].
+
+<p align="center">
+  <img src="main/img/temp_counts.png" width = 400>
+</p>
+
+#### Precipitation: 
 Taking a look at the precipitation amount against the number of accidents we notice two areas of interest. For small amounts of precipitation, we notice a decline [][] as precipitation increases. For precipitation near 10 inches per hour we see a significant increase in accident counts. This is likely a result of the human psychological tendancy to prefer 'round' numbers; this is often refered to as 'round number bias'.
 
 <p align="center">
   <img src="main/img/precip_counts.png" width = 400>
 </p>
 
+#### Visibility: 
 Does visibility effect accident hcounts?
 
 <p align="center">
@@ -153,7 +128,7 @@ Does visibility effect accident hcounts?
 
 The weather data proved difficult to adjust due to underlying data distributions. An example from above is how weather conditions distribute themselves. If this distribution in not uniform, or if we do not subtract it out, we will not be able to obtain meaningful results. With this in mind, I moved onto other features that I knew I could eleminate their underlying distributions.
 
-### Location:
+### __Location__
 
 The locations of each accident were precisesly recorded using geo-positional data (latitude and logitude). These locations allowed for easy mapping of the national roads. Below you can see some heat-map style accident-maps on some popular U.S. areas.
 
@@ -163,6 +138,7 @@ The locations of each accident were precisesly recorded using geo-positional dat
   <img src="main/img/denver_map1.png" width = 550>
 </p>
 
+#### State:
 I quickly became interested in comparing accident counts between states to determine the most and least 'dangerous' states to drive in.  To avoid the naive mistakes mentioned above we will be adjusting the accident counts. One way to adjust the number-of-accidents-per-state is to divide by the state population. This is the approach I will be taking below. 
 
 It's important to distinguish the difference before and after the adjustment on number of accidents. The 'unadjusted' graphs below represent the number of accidents for each state over 3.5 years. These values are weighted since each state has a different number of drivers. To remove this population-bias we can divide each state's number of accidents by the population of that state (assumed to be proportional to the # of drivers); dividing by 3.5 will give us a per-year rate. After these adjustment, our value represents the number of accidents per person per year in each state; we will refer to as the *accident rate* from now on.
@@ -177,7 +153,7 @@ Next I took a more fine grain look at the accident rates around the contiguous U
 
 I obtained an IRS dataset that allowed me to adjust accident counts per Zipcode by dividing by that Zipcode's population. In addition this allowed me to look at the relationship between income, education expense, unemployment rate, number of farms to the accident rate.
 
-### Time:
+### __Time__:
 
 Rush hour double spike
 
