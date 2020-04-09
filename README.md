@@ -31,7 +31,7 @@ unable to normalize (rush hour spikes)
 # Car Accidents Analysis
 
 <p align="center">
-  <img src="images/header.jpg" width = 900 height = 60>
+  <img src="main/img/road_line_mnt.png" width = 900 height = 80>
 </p>
 
 ## Effects of Location, Weather, and Time on Accident Rate and Severity in the United States
@@ -179,5 +179,9 @@ It does seem that there is a statistically significant difference between studen
 *http://worldpopulationreview.com/states/*
 
 *(dataset) USDA Economic Research Service. (2020). Atlas of Rural and Small-Town America. Ag Data Commons. https://data.nal.usda.gov/dataset/atlas-rural-and-small-town-america. Accessed 2020-04-08.*
+
+*Photo by Jeremy Bishop on Unsplash*
+
+*Photo by sergio souza on Unsplash*
 
 [Back to Top](#Table-of-Contents)
