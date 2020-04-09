@@ -129,20 +129,20 @@ n see from both of these plots, the grade features (G1, G2, and G3) are strongly
 Comparing temperature to the number of accidents showed no significant increase at 32<sup>o</sup> F. The plot seems to have a right scew implying that [][][].
 
 <p align="center">
-  img src="main/img/temp_vs_rate.png" width = 400
+  <img src="main/img/temp_counts.png" width = 400>
 </p>
 
 A naive analysis of how the weather conditions relate to accident counts would show that there is no significant increase in accident counts during precipitation. By plotting a histogram of the weather condition counts we don't take into consideration that weather conditions are not identically distributed. 
 For example, if it doesn't snow often but there is a high accident rate when it snows, then we will not be able to see this be only observing the accident counts; the snow-accidents are eclipsed by the large number of non-snow-accidents.
 
 <p align="center">
-  img src="main/img/weather_cond_counts.png" width = 400
+  <img src="main/img/weather_vs_count.png" width = 400>
 </p>
 
 Taking a look at the precipitation amount against the number of accidents we notice two areas of interest. For small amounts of precipitation, we notice a decline [][] as precipitation increases. For precipitation near 10 inches per hour we see a significant increase in accident counts. This is likely a result of the human psychological tendancy to prefer 'round' numbers; this is often refered to as 'round number bias'.
 
 <p align="center">
-  img src="main/img/precip_histo.png" width = 400
+  <img src="main/img/precip_counts.png" width = 400>
 </p>
 
 Does visibility effect accident hcounts?
@@ -154,7 +154,9 @@ The weather data proved difficult to adjust due to underlying data distributions
 The locations of each accident were precisesly recorded using geo-positional data (latitude and logitude). These locations allowed for easy mapping of the national roads. Below you can see some heat-map style accident-maps on some popular U.S. areas.
 
 <p align="center">
-  img src="main/img/heat_maps1.png" width = 400
+  <img src="main/img/cali_map1.png" width = 400>
+  <img src="main/img/nyc_map1.png" width = 400>
+  <img src="main/img/denver_map1.png" width = 400>
 </p>
 
 I quickly became interested in comparing accident counts between states to determine the most and least 'dangerous' states to drive in.  To avoid the naive mistakes mentioned above we will be adjusting the accident counts. One way to adjust the number-of-accidents-per-state is to divide by the state population. This is the approach I will be taking below. 
@@ -162,7 +164,7 @@ I quickly became interested in comparing accident counts between states to deter
 It's important to distinguish the difference before and after the adjustment on number of accidents. The 'unadjusted' graphs below represent the number of accidents for each state over 3.5 years. These values are weighted since each state has a different number of drivers. To remove this population-bias we can divide each state's number of accidents by the population of that state (assumed to be proportional to the # of drivers); dividing by 3.5 will give us a per-year rate. After these adjustment, our value represents the number of accidents per person per year in each state; we will refer to as the *accident rate* from now on.
 
 <p align="center">
-  img src="main/img/state_acc_count_rate.png" width = 400
+  <img src="main/img/state_acc1.png" width = 400>
 </p>
 
 Top-left notice how California's large population outweighs South Carolina's number of accidents despite there being a lower accident rate in California.
