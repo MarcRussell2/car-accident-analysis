@@ -147,6 +147,10 @@ Taking a look at the precipitation amount against the number of accidents we not
 
 Does visibility effect accident hcounts?
 
+<p align="center">
+  <img src="main/img/visibility_counts.png" width = 400>
+</p>
+
 The weather data proved difficult to adjust due to underlying data distributions. An example from above is how weather conditions distribute themselves. If this distribution in not uniform, or if we do not subtract it out, we will not be able to obtain meaningful results. With this in mind, I moved onto other features that I knew I could eleminate their underlying distributions.
 
 ### Location:
@@ -172,6 +176,16 @@ Top-left notice how California's large population outweighs South Carolina's num
 Next I took a more fine grain look at the accident rates around the contiguous United States. This time on a city/neighborhood level. It became aparent that county and city names in the United States are not unique. In an effort to maintain an independent and identically distributed dataset, I chose to work with Zipcodes. In the U.S., Zipcodes *are* unique and are often more 'fine grain' than city names; a single city may have several Zipcodes, one for each nieghborhood within the city.
 
 I obtained an IRS dataset that allowed me to adjust accident counts per Zipcode by dividing by that Zipcode's population. In addition this allowed me to look at the relationship between income, education expense, unemployment rate, number of farms to the accident rate.
+
+### Time:
+
+Rush hour double spike
+
+<p align="center">
+  <img src="main/img/accident-count-throughout-the-day-2.png" width = 500>
+</p>
+
+day by day over year?
 
 [Back to Top](#Table-of-Contents)
 
