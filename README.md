@@ -18,13 +18,8 @@
   - [Question and Hypothesis](#question-and-hypothesis)
   - [Methodology](#methodology)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Model Selection](#model-selection)
-  - [Test Metric: F1 Score](#test-metric-f1-score)
+- [Hypothesis Test](#hypothesis-test)
   - [Feature Selection](#feature-selection)
-  - [Hyperparameter Tuning](#hyperparameter-tuning)
-- [Chosen Model](#chosen-model)
-  - [Specifications](#specifications)
-  - [Model Assessment](#model-assessment)
   - [Results and Interpretation](#results-and-interpretation)
 - [Conclusion](#model-selection)
 - [Citation](#citation])
@@ -168,44 +163,11 @@ day by day over year?
 # Hypothesis Test
 
 ## Feature Selection
-Evaluating the performance of 3 models with varying features:
-
-    1. Full model uses all 69 predictors
-    2. Secondary model uses 29 predictors, using demographic and educational performance features
-    3. Third model uses 18 predictors, focusing on educational outcomes only
-
-## Hyperparameter Tuning 
-Used SKLearn's GridSearch to find the best values for the following hyperparameters.
-
-| Hyperparameter | Math Dataset Optimal Value | Portuguese Dataset Optimal Value |
-|---|---|---|
-| penalty | 'l1' | 'l2' |
-| C (inverse of regularization param) | 7.743 | 1.0 |
-
-[Back to Top](#Table-of-Contents)
-
-# Chosen Model
-
-## Specifications
-    threshold=0.5
-    class_weight = 'balanced'
-    penalty = l1 (MATH), l2 (PORTUGUESE)
-    C = 7.742636826811269 (MATH), 1.0 (PORTUGUESE)
-
-For both Math and Portuguese students, the 3rd model that I tested performed the best, which contained only features on educational outcomes.
-
-## Model Assessment
-
-### Portuguese Data Confusion Matrix
-<p align="center">
-  img src="images/p_conf_mat.png" width = 400
-</p>
-
-
+    1. Full model yrewhju34
+    2. Secondary masdfhwerh
+    3. Third masdfasdf
 ## Results and Interpretation
-
-### Change in Odds of Being in a Relationship
-ghjfghj
+vfgsfdgs
 
 [Back to Top](#Table-of-Contents)
 
