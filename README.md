@@ -6,13 +6,13 @@
 
 <p align="center">
   <img src="main/img/road_line_mnt.png" width = 900 height = 80>
-</p>
+</p><sup>3</sup>
 
 ## Effects of Location, Weather, and Time on Accident Rate and Severity in the United States
 
 ## Table of Contents
 - [Introduction](#introduction)
-  - [Background](#background)
+  - [Motivation](#motivation)
   - [The Data](#the-data)
   - [Questions](#questions)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
@@ -28,7 +28,7 @@
 
 ## Motivation
 
-Through analysis and 
+Through careful analysis of historical automobile accidents I believe we can greatly reduce what is the biggest killer of  
 
 ## The Data
 
@@ -200,16 +200,17 @@ I found the relationships between state accident rates very interesting.
 
 # Citation
 
-<sup>1</sup>*Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019.*
+<sup>1</sup>*Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019. https://www.kaggle.com/sobhanmoosavi/us-accidents*
 
 *Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, Radu Teodorescu, and Rajiv Ramnath. "Accident Risk Prediction based on Heterogeneous Sparse Data: New Dataset and Insights." In proceedings of the 27th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, ACM, 2019.*
+
+<sup>2</sup>*Deaths are from the National Center for Health Statistics (NCHS), except 1964, which are National Safety Council (NSC) estimates based on data from the National Highway Traffic Safety Administration’s (NHTSA) Fatality Analysis Reporting System (FARS) https://injuryfacts.nsc.org/motor-vehicle/historical-fatality-trends/deaths-and-rates/*
 
 *http://worldpopulationreview.com/states/*
 
 *USDA Economic Research Service. (2020). Atlas of Rural and Small-Town America. Ag Data Commons. https://data.nal.usda.gov/dataset/atlas-rural-and-small-town-america. Accessed 2020-04-08.*
 
-
-*Photo by sergio souza on Unsplash*
+<sup>3</sup>*Photo by sergio souza on Unsplash*
 
 *National Center for Statistics and Analysis. (2017, October). 2016 fatal motor vehicle crashes: Overviewexternal icon. (Traffic Safety Facts Research Note. Report No. DOT HS 812 456). Washington, DC: National Highway Traffic Safety Administration.*
 
