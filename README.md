@@ -28,7 +28,7 @@
 
 ## Motivation
 
-Through careful analysis of historical automobile accidents I believe we can greatly reduce what is the biggest killer of  
+Through careful analysis of historical automobile accidents I believe we can greatly reduce what is the biggest killer of young adults in this country.<sup>2</sup> The amount of money, time, and lives lost to car accidents is something that concern all of us and is worth spending time analyzing.
 
 ## The Data
 
@@ -77,7 +77,6 @@ IRS Dataset:
  - Each Zipcode has 6 rows (one for each income division)
 
 ## Feature Categories
-
 
 
 * Accident Results:
