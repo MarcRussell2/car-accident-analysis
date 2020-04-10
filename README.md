@@ -103,14 +103,14 @@ A naive analysis of how the weather conditions relate to accident counts would s
 For example, if it doesn't snow often but there is a high accident rate when it snows, then we will not be able to see this be only observing the accident counts; the snow-accidents are eclipsed by the large number of non-snow-accidents.
 
 <p align="center">
-  <img src="main/img/weather_vs_count.png" width = 400>
+  <img src="main/img/weather_vs_count.png" width = 600>
 </p>
 
 #### Temperature: 
 Does temperature correlate with number of accidents? Is there a spike below 32<sup>o</sup>F?
 
 <p align="center">
-  <img src="main/img/temp_counts.png" width = 400>
+  <img src="main/img/temp_counts.png" width = 600>
 </p>
 
 Comparing temperature to the number of accidents showed no significant increase at 32<sup>o</sup> F. The plot seems to have a right scew which further backs our assumtion earlier - the data is not independent and identically distributed over all temperatures.
@@ -120,7 +120,7 @@ Comparing temperature to the number of accidents showed no significant increase 
 Taking a look at the precipitation amount against the number of accidents we notice two areas of interest. 
 
 <p align="center">
-  <img src="main/img/precip_counts.png" width = 400>
+  <img src="main/img/precip_counts.png" width = 600>
 </p>
 
 For small amounts of precipitation, we notice a steep decline as precipitation increases. For precipitation near 10 inches per hour we see a significant increase in accident counts. This is likely a result of the human psychological tendancy to prefer 'round' numbers; this is often refered to as 'round number bias'.
@@ -129,7 +129,7 @@ For small amounts of precipitation, we notice a steep decline as precipitation i
 Does visibility negatively correlate with number of accident?
 
 <p align="center">
-  <img src="main/img/visibility_counts.png" width = 400>
+  <img src="main/img/visibility_counts.png" width = 600>
 </p>
 
 No, there may be a positive correlation but it is inconclusive.
@@ -141,9 +141,9 @@ The weather data proved difficult to adjust due to underlying data distributions
 The locations of each accident were precisesly recorded using geo-positional data (latitude and logitude). These locations allowed for easy mapping of the national roads. Below you can see some heat-map style accident-maps on some popular U.S. areas.
 
 <p align="center">
-  <img src="main/img/cali_map1.png" width = 400>
-  <img src="main/img/nyc_map1.png" width = 400>
-  <img src="main/img/denver_map1.png" width = 550>
+  <img src="main/img/cali_map1.png" width = 700>
+  <img src="main/img/nyc_map1.png" width = 700>
+  <img src="main/img/denver_map1.png" width = 700>
 </p>
 
 #### State:
@@ -152,7 +152,7 @@ I quickly became interested in comparing accident counts between states to deter
 It's important to distinguish the difference before and after the adjustment on number of accidents. The 'unadjusted' graphs below represent the number of accidents for each state over 3.5 years. These values are weighted since each state has a different number of drivers. To remove this population-bias we can divide each state's number of accidents by the population of that state (assumed to be proportional to the # of drivers); dividing by 3.5 will give us a per-year rate. After these adjustment, our value represents the number of accidents per person per year in each state; we will refer to as the *accident rate* from now on.
 
 <p align="center">
-  <img src="main/img/state_acc1.png" width = 700>
+  <img src="main/img/state_acc1.png" width = 750>
 </p>
 
 Top-left notice how California's large population outweighs South Carolina's number of accidents despite there being a lower accident rate in California.
@@ -166,7 +166,7 @@ I obtained an IRS dataset that allowed me to adjust accident counts per Zipcode 
 Let's take a look at how accident counts change throughout the day. 
 
 <p align="center">
-  <img src="main/img/accident-count-throughout-the-day-3.png" width = 500>
+  <img src="main/img/accident-count-throughout-the-day-3.png" width = 700>
 </p>
 
 As we expected there are two peaks in accident counts, one for each 'rush hour'. Let's instead look at how accident counts change over large time scales.
@@ -174,13 +174,13 @@ As we expected there are two peaks in accident counts, one for each 'rush hour'.
 Plotting over the entire year of 2017 there are two features that stand out. There are many short-term fluctuation as well as a single, longer-term increase in accident counts. The long term fluctuation occurs near the fall equinox. One cause of this could be wet leaves on the roads - a serious hazard.
 
 <p align="center">
-  <img src="main/img/accident-count-throughout-the-year.png" width = 500>
+  <img src="main/img/accident-count-throughout-the-year.png" width = 700>
 </p>
 
 Let's examine the shorter-term fluctuations. If we were to count the peaks or valleys, we would find that there are about 52 - suggesting that it is weekly.
 
 <p align="center">
-  <img src="main/img/accident-count-throughout-april.png" width = 500>
+  <img src="main/img/accident-count-throughout-april.png" width = 700>
 </p>
 
 [Back to Top](#Table-of-Contents)
