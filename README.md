@@ -1,3 +1,7 @@
+*Capstone I Project for Galvanize Data Science Immersive, Week 4*
+
+*by Marc Russell*
+
 # Car Accidents Analysis
 
 <p align="center">
@@ -5,11 +9,6 @@
 </p>
 
 ## Effects of Location, Weather, and Time on Accident Rate and Severity in the United States
-
-*Capstone I Project for Galvanize Data Science Immersive, Week 4*
-
-*by Marc Russell*
-
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -27,13 +26,15 @@
 
 # Introduction
 
-## Background
+## Motivation
 
-Automobile accidents can be used to 
+Through analysis and 
 
 ## The Data
 
-This dataset has been collected in real-time, using multiple Traffic APIs. It contains car accident data that is collected from February 2016 to December 2019 for the Contiguous United States. By using several data providers, the authors<sup>1</sup> constructed this dataset. It incorperates two APIs which provide streaming traffic event data. These APIs broadcast traffic events captured by a variety of entities, such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks. Currently, there are about 3.0 million accident records in this dataset. 
+The car accident dataset has been collected in real-time, using multiple Traffic APIs. It contains car accident data that is collected from February 2016 to December 2019 for the Contiguous United States. By using several data providers such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks, the authors<sup>1</sup> were able to construct about 3 million detailed accident records. This comprises somewhere between 10% and 50% of the total number of accidents in the US during that timespan.
+
+The population dataset was an annual report given out by the IRS which describes precisely the number and amounts of many tax details including income, population, etc. for each US Zipcode.
  
 
 ## Question and Hypothesis
@@ -64,8 +65,13 @@ MVP
 
 ## Groups
 
-* 49 columns and 3 million rows
-
+Accident Dataset:
+ - 49 columns and 3 million rows
+ - Each row is an accident event
+ 
+IRS Dataset:
+ - 153 columns and 1 million rows
+ - Each Zipcode has 6 rows (one for each income division)
 
 ## Feature Categories
 
@@ -183,7 +189,7 @@ It does seem that there is a statistically significant difference between studen
 
 *http://worldpopulationreview.com/states/*
 
-*(dataset) USDA Economic Research Service. (2020). Atlas of Rural and Small-Town America. Ag Data Commons. https://data.nal.usda.gov/dataset/atlas-rural-and-small-town-america. Accessed 2020-04-08.*
+*USDA Economic Research Service. (2020). Atlas of Rural and Small-Town America. Ag Data Commons. https://data.nal.usda.gov/dataset/atlas-rural-and-small-town-america. Accessed 2020-04-08.*
 
 *Photo by Jeremy Bishop on Unsplash*
 
