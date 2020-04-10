@@ -17,6 +17,10 @@
   - [Question and Hypothesis](#question-and-hypothesis)
   - [Methodology](#methodology)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
+  - [Weather](#weather)
+  - [Location](#location)
+  - [State](#state)
+  - [Time](#time)
 - [Conclusion](#model-selection)
 - [Citation](#citation])
 
@@ -39,6 +43,10 @@ The population dataset was an annual report given out by the IRS which describes
  - How does weather (temperature, wind, precipitation, visibility, etc.) effect accident rates? <sup>MVP.1</sup>
 
  - What are the safest states to drive in?  <sup>MVP.1</sup>
+ 
+ - When are the safest times of the day/month/year to drive?  <sup>MVP.1</sup>
+ 
+ - Do higher income neighborhoods have lower accident rates? <sup>MVP.3</sup>
 
  - Do neighborhoods with high education taxes have lower accident rates? <sup>MVP.3</sup>
 
@@ -48,7 +56,6 @@ The population dataset was an annual report given out by the IRS which describes
 
  - How does number of retirees effect accident rates? <sup>MVP.3</sup>
 
-Do higher income neighborhoods have lower accident rates?
 
 MVP (Minimum Viable Product)
 1. Exploratory data analysis & plots
@@ -93,7 +100,7 @@ IRS Dataset:
 
 ## Exploration
 
-### _Weather_
+### Weather
 
 #### Weather Condition: 
 A naive analysis of how the weather conditions relate to accident counts would show that there is no significant increase in accident counts during precipitation. By plotting a histogram of the weather condition counts we don't take into consideration that weather conditions are not identically distributed. 
@@ -133,7 +140,7 @@ No, there may be a positive correlation but it is inconclusive.
 
 The weather data proved difficult to adjust due to underlying data distributions. An example from above is how weather conditions distribute themselves. If this distribution in not uniform, or if we do not subtract it out, we will not be able to obtain meaningful results. With this in mind, I moved onto other features that I knew I could eleminate their underlying distributions.
 
-### __Location__
+### Location
 
 The locations of each accident were precisesly recorded using geo-positional data (latitude and logitude). These locations allowed for easy mapping of the national roads. Below you can see some heat-map style accident-maps on some popular U.S. areas.
 
@@ -144,6 +151,7 @@ The locations of each accident were precisesly recorded using geo-positional dat
 </p>
 
 #### State:
+
 I quickly became interested in comparing accident counts between states to determine the most and least 'dangerous' states to drive in.  To avoid the naive mistakes mentioned above we will be adjusting the accident counts. One way to adjust the number-of-accidents-per-state is to divide by the state population. This is the approach I will be taking below. 
 
 It's important to distinguish the difference before and after the adjustment on number of accidents. The 'unadjusted' graphs below represent the number of accidents for each state over 3.5 years. These values are weighted since each state has a different number of drivers. To remove this population-bias we can divide each state's number of accidents by the population of that state (assumed to be proportional to the # of drivers); dividing by 3.5 will give us a per-year rate. After these adjustment, our value represents the number of accidents per person per year in each state; we will refer to as the *accident rate* from now on.
@@ -158,7 +166,7 @@ Next I took a more fine grain look at the accident rates around the contiguous U
 
 I obtained an IRS dataset that allowed me to adjust accident counts per Zipcode by dividing by that Zipcode's population. In addition this allowed me to look at the relationship between income, education expense, unemployment rate, number of farms to the accident rate.
 
-### __Time__:
+### Time:
 
 Let's take a look at how accident counts change throughout the day. 
 
@@ -184,6 +192,7 @@ Let's examine the shorter-term fluctuations. If we were to count the peaks or va
 
 
 # Conclusion
+
 I initally wanted to focus my study on how weather conditions effect accident rates. It turned out that adjusting my data to account for the fact that is not independent and identically distributed proved difficult. To remedy this, I would source a dataset of locational-hourly-weather and merged with the accident data set. Instead I shifted focus to locational and temporal relationships to accident rates.
 
 I found the relationships between state accident rates very interesting.
@@ -191,6 +200,7 @@ I found the relationships between state accident rates very interesting.
 [Back to Top](#Table-of-Contents)
 
 # Citation
+
 <sup>1</sup>*Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019.*
 
 *Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, Radu Teodorescu, and Rajiv Ramnath. "Accident Risk Prediction based on Heterogeneous Sparse Data: New Dataset and Insights." In proceedings of the 27th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, ACM, 2019.*
