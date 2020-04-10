@@ -14,15 +14,14 @@
 - [Introduction](#introduction)
   - [Background](#background)
   - [The Data](#the-data)
-  - [Question and Hypothesis](#question-and-hypothesis)
-  - [Methodology](#methodology)
+  - [Questions](#questions)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
   - [Weather](#weather)
   - [Location](#location)
   - [State](#state)
   - [Time](#time)
-- [Conclusion](#model-selection)
-- [Citation](#citation])
+- [Conclusion](#conclusion)
+- [Citation](#citation)
 
 
 # Introduction
@@ -38,7 +37,7 @@ The car accident dataset has been collected in real-time, using multiple Traffic
 The population dataset was an annual report given out by the IRS which describes precisely the number and amounts of many tax details including income, population, etc. for each US Zipcode.
  
 
-## Question
+## Questions
 
  - How does weather (temperature, wind, precipitation, visibility, etc.) effect accident rates? <sup>MVP.1</sup>
 
