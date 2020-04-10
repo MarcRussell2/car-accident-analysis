@@ -5,7 +5,7 @@
 # Car Accidents Analysis
 
 <p align="center">
-  <img src="main/img/road_line_mnt.png" width = 900 height = 80><sup>3</sup>
+  <img src="main/img/road_line_mnt.png" width = 900 height = 80><sup>(3)</sup>
 </p>
 
 ## Effects of Location, Weather, and Time on Accident Rate and Severity in the United States
@@ -28,11 +28,11 @@
 
 ## Motivation
 
-Through careful analysis of historical automobile accidents I believe we can greatly reduce what is the biggest killer of young adults in this country.<sup>2</sup> The amount of money, time, and lives lost to car accidents is something that concern all of us and is worth spending time analyzing.
+Through careful analysis of historical automobile accidents I believe we can greatly reduce what is the biggest killer of young adults in this country.<sup>(2)</sup> The amount of money, time, and lives lost to car accidents is something that concern all of us and is worth spending time analyzing.
 
 ## The Data
 
-The car accident dataset has been collected in real-time, using multiple Traffic APIs. It contains car accident data that is collected from February 2016 to December 2019 for the Contiguous United States. By using several data providers such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks, the authors<sup>1</sup> were able to construct about 3 million detailed accident records. This comprises somewhere between 10% and 50% of the total number of accidents in the US during that timespan.
+The car accident dataset has been collected in real-time, using multiple Traffic APIs. It contains car accident data that is collected from February 2016 to December 2019 for the Contiguous United States. By using several data providers such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks, the authors<sup>(1)</sup> were able to construct about 3 million detailed accident records. This comprises somewhere between 10% and 50% of the total number of accidents in the US during that timespan.
 
 The population dataset was an annual report given out by the IRS which describes precisely the number and amounts of many tax details including income, population, etc. for each US Zipcode.
  
@@ -199,17 +199,17 @@ I found the relationships between state accident rates very interesting.
 
 # Citation
 
-<sup>1</sup>*Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019. https://www.kaggle.com/sobhanmoosavi/us-accidents*
+<sup>(1)</sup>*Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019. https://www.kaggle.com/sobhanmoosavi/us-accidents*
 
 *Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, Radu Teodorescu, and Rajiv Ramnath. "Accident Risk Prediction based on Heterogeneous Sparse Data: New Dataset and Insights." In proceedings of the 27th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, ACM, 2019.*
 
-<sup>2</sup>*Deaths are from the National Center for Health Statistics (NCHS), except 1964, which are National Safety Council (NSC) estimates based on data from the National Highway Traffic Safety Administration’s (NHTSA) Fatality Analysis Reporting System (FARS) https://injuryfacts.nsc.org/motor-vehicle/historical-fatality-trends/deaths-and-rates/*
+<sup>(2)</sup>*Deaths are from the National Center for Health Statistics (NCHS), except 1964, which are National Safety Council (NSC) estimates based on data from the National Highway Traffic Safety Administration’s (NHTSA) Fatality Analysis Reporting System (FARS) https://injuryfacts.nsc.org/motor-vehicle/historical-fatality-trends/deaths-and-rates/*
 
 *http://worldpopulationreview.com/states/*
 
 *USDA Economic Research Service. (2020). Atlas of Rural and Small-Town America. Ag Data Commons. https://data.nal.usda.gov/dataset/atlas-rural-and-small-town-america. Accessed 2020-04-08.*
 
-<sup>3</sup>*Photo by sergio souza on Unsplash*
+<sup>(3)</sup>*Photo by sergio souza on Unsplash*
 
 *National Center for Statistics and Analysis. (2017, October). 2016 fatal motor vehicle crashes: Overviewexternal icon. (Traffic Safety Facts Research Note. Report No. DOT HS 812 456). Washington, DC: National Highway Traffic Safety Administration.*
 
