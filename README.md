@@ -75,13 +75,15 @@ IRS Dataset:
 
 ## Feature Categories
 
+
+
 * Accident Results:
 
-       Accident Counts (rows), Severity, Time to Clear, Length of Road Effected, Description
+       Accident Counts (rows), Severity, Length of Road Effected, Description
 
 * Weather:
 
-      Temperature, Wind (speed, direction), Weather Condition, Precipitation, Visibility
+      Temperature, Weather Condition, Precipitation, Visibility
 
 * Road Attributes:
 
@@ -89,12 +91,12 @@ IRS Dataset:
       
 * Geo-positional:
 
-      Latitude, Longitude, State, County, City, Street, Zipcode
+      Latitude, Longitude, State, County, City, Zipcode
 
 
 ## Exploration
 
-### __Weather__
+### _Weather_
 
 #### Weather Condition: 
 A naive analysis of how the weather conditions relate to accident counts would show that there is no significant increase in accident counts during precipitation. By plotting a histogram of the weather condition counts we don't take into consideration that weather conditions are not identically distributed. 
@@ -107,25 +109,30 @@ For example, if it doesn't snow often but there is a high accident rate when it 
 #### Temperature: 
 Does temperature correlate with number of accidents? Is there a spike below 32<sup>o</sup>F?
 
-Comparing temperature to the number of accidents showed no significant increase at 32<sup>o</sup> F. The plot seems to have a right scew implying that [][][].
-
 <p align="center">
   <img src="main/img/temp_counts.png" width = 400>
 </p>
 
+Comparing temperature to the number of accidents showed no significant increase at 32<sup>o</sup> F. The plot seems to have a right scew which further backs our assumtion earlier - the data is not independent and identically distributed over all temperatures.
+
+
 #### Precipitation: 
-Taking a look at the precipitation amount against the number of accidents we notice two areas of interest. For small amounts of precipitation, we notice a decline [][] as precipitation increases. For precipitation near 10 inches per hour we see a significant increase in accident counts. This is likely a result of the human psychological tendancy to prefer 'round' numbers; this is often refered to as 'round number bias'.
+Taking a look at the precipitation amount against the number of accidents we notice two areas of interest. 
 
 <p align="center">
   <img src="main/img/precip_counts.png" width = 400>
 </p>
 
+For small amounts of precipitation, we notice a steep decline as precipitation increases. For precipitation near 10 inches per hour we see a significant increase in accident counts. This is likely a result of the human psychological tendancy to prefer 'round' numbers; this is often refered to as 'round number bias'.
+
 #### Visibility: 
-Does visibility effect accident hcounts?
+Does visibility negatively correlate with number of accident?
 
 <p align="center">
   <img src="main/img/visibility_counts.png" width = 400>
 </p>
+
+No, there may be a positive correlation but it is inconclusive.
 
 The weather data proved difficult to adjust due to underlying data distributions. An example from above is how weather conditions distribute themselves. If this distribution in not uniform, or if we do not subtract it out, we will not be able to obtain meaningful results. With this in mind, I moved onto other features that I knew I could eleminate their underlying distributions.
 
@@ -178,7 +185,9 @@ vfgsfdgs
 [Back to Top](#Table-of-Contents)
 
 # Conclusion
-It does seem that there is a statistically significant difference between students who are in a relationship and those who are not for certain educationnity.  
+I initally wanted to focus my study on how weather conditions effect accident rates. It turned out that adjusting my data to account for the fact that is not independent and identically distributed proved difficult. To remedy this, I would source a dataset of locational-hourly-weather and merged with the accident data set. Instead I shifted focus to locational and temporal relationships to accident rates.
+
+I found the relationships between state accident rates very interesting.
 
 [Back to Top](#Table-of-Contents)
 
