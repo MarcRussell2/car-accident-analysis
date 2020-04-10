@@ -148,7 +148,7 @@ The weather data proved difficult to adjust due to underlying data distributions
 The locations of each accident were precisely recorded using geo-positional data (latitude and longitude). These locations allowed for easy mapping of the national roads. Below you can see some heat-map style accident-maps on some popular U.S. areas.
 
 <p align="center">
-  <img src="main/img/cali_map1.png" width = 400>
+  <img src="main/img/cali_map1.png" width = 430>
   <img src="main/img/nyc_map1.png" width = 400>
   <img src="main/img/denver_map1.png" width = 700>
 </p>
