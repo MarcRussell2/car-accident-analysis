@@ -199,7 +199,6 @@ I found the relationships between state accident rates very interesting.
 
 *USDA Economic Research Service. (2020). Atlas of Rural and Small-Town America. Ag Data Commons. https://data.nal.usda.gov/dataset/atlas-rural-and-small-town-america. Accessed 2020-04-08.*
 
-*Photo by Jeremy Bishop on Unsplash*
 
 *Photo by sergio souza on Unsplash*
 
