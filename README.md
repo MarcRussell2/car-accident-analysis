@@ -35,7 +35,7 @@ Through careful analysis of historical automobile accidents I believe we can gre
 
 ## The Data
 
-The car accident dataset has been collected in real-time, using multiple Traffic APIs. It contains car accident data that is collected from February 2016 to December 2019 for the Contiguous United States. By using several data providers such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks, the authors<sup>(1)</sup> were able to construct about 3 million detailed accident records. This comprises somewhere between 10% and 50% of the total number of accidents in the US during that timespan.
+The car accident dataset has been collected in real-time, using multiple Traffic APIs. It contains car accident data that is collected from February 2016 to December 2019 for the Contiguous United States. By using several data providers such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks, the authors<sup>(1)</sup> were able to construct about 3 million detailed accident records. This comprises somewhere between 10% and 50% of the total number of accidents in the US during that time span.
 
 The population dataset was an annual report given out by the IRS which describes precisely the number and amounts of many tax details including income, population, etc. for each US Zipcode.
  
@@ -54,7 +54,7 @@ The population dataset was an annual report given out by the IRS which describes
 
  - Are accident rates lower in towns with more farms? <sup>MVP.3</sup>
 
- - How does uneployment effect accident rates? <sup>MVP.3</sup>
+ - How does unemployment effect accident rates? <sup>MVP.3</sup>
 
  - How does number of retirees effect accident rates? <sup>MVP.3</sup>
 
@@ -118,7 +118,7 @@ Does temperature correlate with number of accidents? Is there a spike below 32<s
   <img src="main/img/temp_counts.png" width = 600>
 </p>
 
-Comparing temperature to the number of accidents showed no significant increase at 32<sup>o</sup> F. The plot seems to have a right scew which further backs our assumtion earlier - the data is not independent and identically distributed over all temperatures.
+Comparing temperature to the number of accidents showed no significant increase at 32<sup>o</sup> F. The plot seems to have a right skew which further backs our assumption earlier - the data is not independent and identically distributed over all temperatures.
 
 
 #### Precipitation: 
@@ -128,7 +128,7 @@ Taking a look at the precipitation amount against the number of accidents we not
   <img src="main/img/precip_counts.png" width = 600>
 </p>
 
-For small amounts of precipitation, we notice a steep decline as precipitation increases. For precipitation near 10 inches per hour we see a significant increase in accident counts. This is likely a result of the human psychological tendancy to prefer 'round' numbers; this is often refered to as 'round number bias'.
+For small amounts of precipitation, we notice a steep decline as precipitation increases. For precipitation near 10 inches per hour we see a significant increase in accident counts. This is likely a result of the human psychological tendency to prefer 'round' numbers; this is often referred to as 'round number bias'.
 
 #### Visibility: 
 Does visibility negatively correlate with number of accident?
@@ -139,11 +139,11 @@ Does visibility negatively correlate with number of accident?
 
 No, there may be a positive correlation but it is inconclusive.
 
-The weather data proved difficult to adjust due to underlying data distributions. An example from above is how weather conditions distribute themselves. If this distribution in not uniform, or if we do not subtract it out, we will not be able to obtain meaningful results. With this in mind, I moved onto other features that I knew I could eleminate their underlying distributions.
+The weather data proved difficult to adjust due to underlying data distributions. An example from above is how weather conditions distribute themselves. If this distribution in not uniform, or if we do not subtract it out, we will not be able to obtain meaningful results. With this in mind, I moved onto other features that I knew I could eliminate their underlying distributions.
 
 ### Location
 
-The locations of each accident were precisesly recorded using geo-positional data (latitude and logitude). These locations allowed for easy mapping of the national roads. Below you can see some heat-map style accident-maps on some popular U.S. areas.
+The locations of each accident were precisely recorded using geo-positional data (latitude and longitude). These locations allowed for easy mapping of the national roads. Below you can see some heat-map style accident-maps on some popular U.S. areas.
 
 <p align="center">
   <img src="main/img/cali_map1.png" width = 400>
@@ -162,10 +162,6 @@ It's important to distinguish the difference before and after the adjustment on 
 </p>
 
 Top-left notice how California's large population outweighs South Carolina's number of accidents despite there being a lower accident rate in California.
-
-Next I took a more fine grain look at the accident rates around the contiguous United States. This time on a city/neighborhood level. It became aparent that county and city names in the United States are not unique. In an effort to maintain an independent and identically distributed dataset, I chose to work with Zipcodes. In the U.S., Zipcodes *are* unique and are often more 'fine grain' than city names; a single city may have several Zipcodes, one for each nieghborhood within the city.
-
-I obtained an IRS dataset that allowed me to adjust accident counts per Zipcode by dividing by that Zipcode's population. In addition this allowed me to look at the relationship between income, education expense, unemployment rate, number of farms to the accident rate.
 
 ### Time:
 
@@ -194,7 +190,7 @@ Let's examine the shorter-term fluctuations. If we were to count the peaks or va
 
 # Conclusion
 
-I initally wanted to focus my study on how weather conditions effect accident rates. It turned out that adjusting my data to account for the fact that is not independent and identically distributed proved difficult. To remedy this, I would source a dataset of locational-hourly-weather and merged with the accident data set. Instead I shifted focus to locational and temporal relationships to accident rates.
+I initially wanted to focus my study on how weather conditions effect accident rates. It turned out that adjusting my data to account for the fact that is not independent and identically distributed proved difficult. To remedy this, I would source a dataset of locational-hourly-weather and merged with the accident data set. Instead I shifted focus to locational and temporal relationships to accident rates.
 
 I found the relationships between state accident rates very interesting.
 
