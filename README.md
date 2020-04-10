@@ -5,8 +5,8 @@
 # Car Accidents Analysis
 
 <p align="center">
-  <img src="main/img/road_line_mnt.png" width = 900 height = 80>
-</p><sup>3</sup>
+  <img src="main/img/road_line_mnt.png" width = 900 height = 80><sup>3</sup>
+</p>
 
 ## Effects of Location, Weather, and Time on Accident Rate and Severity in the United States
 
