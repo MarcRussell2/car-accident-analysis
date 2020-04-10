@@ -17,9 +17,6 @@
   - [Question and Hypothesis](#question-and-hypothesis)
   - [Methodology](#methodology)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Hypothesis Test](#hypothesis-test)
-  - [Feature Selection](#feature-selection)
-  - [Results and Interpretation](#results-and-interpretation)
 - [Conclusion](#model-selection)
 - [Citation](#citation])
 
@@ -185,16 +182,6 @@ Let's examine the shorter-term fluctuations. If we were to count the peaks or va
 
 [Back to Top](#Table-of-Contents)
 
-# Hypothesis Test
-
-## Feature Selection
-    1. Full model yrewhju34
-    2. Secondary masdfhwerh
-    3. Third masdfasdf
-## Results and Interpretation
-vfgsfdgs
-
-[Back to Top](#Table-of-Contents)
 
 # Conclusion
 I initally wanted to focus my study on how weather conditions effect accident rates. It turned out that adjusting my data to account for the fact that is not independent and identically distributed proved difficult. To remedy this, I would source a dataset of locational-hourly-weather and merged with the accident data set. Instead I shifted focus to locational and temporal relationships to accident rates.
@@ -204,7 +191,7 @@ I found the relationships between state accident rates very interesting.
 [Back to Top](#Table-of-Contents)
 
 # Citation
-*Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019.*
+<sup>1</sup>*Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019.*
 
 *Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, Radu Teodorescu, and Rajiv Ramnath. "Accident Risk Prediction based on Heterogeneous Sparse Data: New Dataset and Insights." In proceedings of the 27th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, ACM, 2019.*
 
