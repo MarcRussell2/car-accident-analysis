@@ -1,7 +1,7 @@
 """
 Marc Russell
 2020 April 10th
-Proud to Present My First Capstone Source Code
+Proud to Present My First Capstone Script
 Car Accident Analysis (Accident? More Like Accidon't!)
 This is so exciting! HI FUTURE MARC!
 """
