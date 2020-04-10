@@ -5,7 +5,7 @@
 # Car Accidents Analysis
 
 <p align="center">
-  <img src="main/img/road_line_mnt.png" width = 900 height = 80><sup>(3)</sup>
+  <img src="main/img/road_line_mnt.png" width = 900 height = 80><sup>(2)</sup>
 </p>
 
 ## Effects of Location, Weather, and Time on Accident Rate and Severity in the United States
@@ -31,7 +31,7 @@
 
 ## Motivation
 
-Through careful analysis of historical automobile accidents, I believe we can greatly reduce what is the biggest killer of young adults in this country.<sup>(2)</sup> The amount of money, time, and lives lost to car accidents is something that concern all of us and is worth spending time analyzing.
+Through careful analysis of historical automobile accidents, I believe we can greatly reduce what is the biggest killer of young adults in this country.<sup>(3)</sup> The amount of money, time, and lives lost to car accidents is something that concern all of us and is worth spending time analyzing.
 
 ## The Data
 
@@ -157,7 +157,7 @@ The locations of each accident were precisely recorded using geo-positional data
 
 I quickly became interested in comparing accident counts between states to determine the most and least 'dangerous' states to drive in.  To avoid the naive mistakes mentioned above we will be adjusting the accident counts. One way to adjust the number-of-accidents-per-state is to divide by the state population. This is the approach I will be taking below. 
 
-It's important to distinguish the difference before and after the adjustment on number of accidents. The 'unadjusted' graphs below represent the number of accidents for each state over 3.5 years. These values are weighted since each state has a different number of drivers. To remove this population-bias we can divide each state's number of accidents by the population of that state (assumed to be proportional to the # of drivers); dividing by 3.5 will give us a per-year rate. After these adjustment, our value represents the number of accidents per person per year in each state; we will refer to as the *accident rate* from now on.
+It's important to distinguish the difference before and after the adjustment on number of accidents. The 'unadjusted' graphs below represent the number of accidents for each state over 3.5 years. These values are weighted since each state has a different number of drivers. To remove this population-bias we can divide each state's number of accidents by the population of that state (assumed to be proportional to the # of drivers); dividing by 3.5 will give us a per-year rate. After these adjustments, our value represents the number of accidents per person per year in each state; we will refer to as the *accident rate* from now on.
 
 <p align="center">
   <img src="main/img/state_acc_count_rate.png" width = 850>
@@ -187,14 +187,20 @@ Let's examine the shorter-term fluctuations. If we were to count the peaks or va
   <img src="main/img/accident-count-throughout-april.png" width = 700>
 </p>
 
+Above I have zoomed into a single month (April of 2017) and shaded the weekends. It's quite apparent that there are many more accidents during the week (Monday - Friday) than the weekend (Saturday, Sunday). As mention previously, the number of drivers on the road may be much higher during the week causing the plot above to be 'weighted'. Because of this, it is not appropriate to compare accident *counts* from different times of the day.
+
 [Back to Top](#Table-of-Contents)
 
 
 # Conclusion
 
-I initially wanted to focus my study on how weather conditions effect accident rates. It turned out that adjusting my data to account for the fact that is not independent and identically distributed proved difficult. To remedy this, I would source a dataset of locational-hourly-weather and merged with the accident data set. Instead I shifted focus to locational and temporal relationships to accident rates.
+I initially wanted to focus my study on how weather conditions effect accident rates. It turned out that adjusting my data to account for the fact that is not independent and identically distributed (IID) proved difficult. To remedy this, I would source a dataset of locational-hourly-weather and merged with the accident data set. Instead I decided to shift focus to exploring how accident counts change with location.
 
-I found the relationships between state accident rates very interesting.
+I found the relationships of state-to-state accident rates very interesting. Despite the data not being IID I was able to merge a population dataset with the accident counts to achieve a rate - the number of accidents per person per year in each state. This subtle change allows us to compare states between eachother despite variable populations. It turns out that South Carolina has the highest accident rate while North and South Dakota have the lowest accident rates.
+
+Lastly I looked at the relationship between time and accident counts. It quickly became apparent that the accident counts over time were also not IID. I decided to explore the relationship anyway, being careful not to draw strict conclusions. Over the course of the day it was expected to see the double rush hour peak. On the other hand, I found it surprising that the seasonal rise in accident counts happened during fall and not winter. 
+
+I hope to return to this dataset soon and explore the remaining corners. It will also be a fun challenge to merge the aforementioned dataset which will allow me to draw conclusions where I was not able to before.
 
 [Back to Top](#Table-of-Contents)
 
@@ -204,13 +210,15 @@ I found the relationships between state accident rates very interesting.
 
 *Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, Radu Teodorescu, and Rajiv Ramnath. "Accident Risk Prediction based on Heterogeneous Sparse Data: New Dataset and Insights." In proceedings of the 27th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, ACM, 2019.*
 
-<sup>(2)</sup>*Deaths are from the National Center for Health Statistics (NCHS), except 1964, which are National Safety Council (NSC) estimates based on data from the National Highway Traffic Safety Administration’s (NHTSA) Fatality Analysis Reporting System (FARS) https://injuryfacts.nsc.org/motor-vehicle/historical-fatality-trends/deaths-and-rates/*
+<sup>(2)</sup>*Photo by sergio souza on Unsplash*
+
+<sup>(3)</sup>*Deaths are from the National Center for Health Statistics (NCHS), except 1964, which are National Safety Council (NSC) estimates based on data from the National Highway Traffic Safety Administration’s (NHTSA) Fatality Analysis Reporting System (FARS) https://injuryfacts.nsc.org/motor-vehicle/historical-fatality-trends/deaths-and-rates/*
 
 *http://worldpopulationreview.com/states/*
 
 *USDA Economic Research Service. (2020). Atlas of Rural and Small-Town America. Ag Data Commons. https://data.nal.usda.gov/dataset/atlas-rural-and-small-town-america. Accessed 2020-04-08.*
 
-<sup>(3)</sup>*Photo by sergio souza on Unsplash*
+
 
 *National Center for Statistics and Analysis. (2017, October). 2016 fatal motor vehicle crashes: Overviewexternal icon. (Traffic Safety Facts Research Note. Report No. DOT HS 812 456). Washington, DC: National Highway Traffic Safety Administration.*
 
