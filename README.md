@@ -36,17 +36,17 @@ The population dataset was an annual report given out by the IRS which describes
 
 ## Question
 
- - <sup>MVP.1</sup> How does weather (temperature, wind, precipitation, visibility, etc.) effect accident rates?
+ - How does weather (temperature, wind, precipitation, visibility, etc.) effect accident rates? <sup>MVP.1</sup>
 
- - <sup>MVP.1</sup> What are the safest states to drive in? 
+ - What are the safest states to drive in?  <sup>MVP.1</sup>
 
- - <sup>MVP.3</sup> Do neighborhoods with high education taxes have lower accident rates?
+ - Do neighborhoods with high education taxes have lower accident rates? <sup>MVP.3</sup>
 
- - <sup>MVP.3</sup> Are accident rates lower in towns with more farms?
+ - Are accident rates lower in towns with more farms? <sup>MVP.3</sup>
 
- - <sup>MVP.3</sup> How does uneployment effect accident rates?
+ - How does uneployment effect accident rates? <sup>MVP.3</sup>
 
- - <sup>MVP.3</sup> How does number of retirees effect accident rates?
+ - How does number of retirees effect accident rates? <sup>MVP.3</sup>
 
 Do higher income neighborhoods have lower accident rates?
 
