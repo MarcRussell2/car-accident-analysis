@@ -163,13 +163,25 @@ I obtained an IRS dataset that allowed me to adjust accident counts per Zipcode 
 
 ### __Time__:
 
-Rush hour double spike
+Let's take a look at how accident counts change throughout the day. 
 
 <p align="center">
-  <img src="main/img/accident-count-throughout-the-day-2.png" width = 500>
+  <img src="main/img/accident-count-throughout-the-day-3.png" width = 500>
 </p>
 
-day by day over year?
+As we expected there are two peaks in accident counts, one for each 'rush hour'. Let's instead look at how accident counts change over large time scales.
+
+Plotting over the entire year of 2017 there are two features that stand out. There are many short-term fluctuation as well as a single, longer-term increase in accident counts. The long term fluctuation occurs near the fall equinox. One cause of this could be wet leaves on the roads - a serious hazard.
+
+<p align="center">
+  <img src="main/img/accident-count-throughout-the-year.png" width = 500>
+</p>
+
+Let's examine the shorter-term fluctuations. If we were to count the peaks or valleys, we would find that there are about 52 - suggesting that it is weekly.
+
+<p align="center">
+  <img src="main/img/accident-count-throughout-april.png" width = 500>
+</p>
 
 [Back to Top](#Table-of-Contents)
 
