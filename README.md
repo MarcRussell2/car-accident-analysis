@@ -141,8 +141,8 @@ The weather data proved difficult to adjust due to underlying data distributions
 The locations of each accident were precisesly recorded using geo-positional data (latitude and logitude). These locations allowed for easy mapping of the national roads. Below you can see some heat-map style accident-maps on some popular U.S. areas.
 
 <p align="center">
-  <img src="main/img/cali_map1.png" width = 700>
-  <img src="main/img/nyc_map1.png" width = 700>
+  <img src="main/img/cali_map1.png" width = 400>
+  <img src="main/img/nyc_map1.png" width = 400>
   <img src="main/img/denver_map1.png" width = 700>
 </p>
 
@@ -152,7 +152,7 @@ I quickly became interested in comparing accident counts between states to deter
 It's important to distinguish the difference before and after the adjustment on number of accidents. The 'unadjusted' graphs below represent the number of accidents for each state over 3.5 years. These values are weighted since each state has a different number of drivers. To remove this population-bias we can divide each state's number of accidents by the population of that state (assumed to be proportional to the # of drivers); dividing by 3.5 will give us a per-year rate. After these adjustment, our value represents the number of accidents per person per year in each state; we will refer to as the *accident rate* from now on.
 
 <p align="center">
-  <img src="main/img/state_acc1.png" width = 750>
+  <img src="main/img/state_acc_count_rate.png" width = 850>
 </p>
 
 Top-left notice how California's large population outweighs South Carolina's number of accidents despite there being a lower accident rate in California.
