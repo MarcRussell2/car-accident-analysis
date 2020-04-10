@@ -35,7 +35,7 @@ Through careful analysis of historical automobile accidents, I believe we can gr
 
 ## The Data
 
-The car accident dataset has been collected in real-time, using multiple Traffic APIs. It contains car accident data that is collected from February 2016 to December 2019 for the Contiguous United States. By using several data providers such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks, the authors<sup>(1)</sup> were able to construct about 3 million detailed accident records. This comprises somewhere between 10% and 50% of the total number of accidents in the US during that time span.
+The car accident dataset has been collected in real-time, using multiple Traffic APIs. It contains car accident data that is collected from February 2016 to December 2019 for the contiguous United States. By using several data providers such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks, the authors<sup>(1)</sup> were able to construct about 3 million detailed accident records. This comprises somewhere between 10% and 50% of the total number of accidents in the US during that time span.
 
 The population dataset was an annual report given out by the IRS which describes precisely the number and amounts of many tax details including income, population, etc. for each US Zipcode.
  
@@ -73,10 +73,12 @@ MVP (Minimum Viable Product)
 
 Accident Dataset:
  - 49 columns and 3 million rows
- - Each row is an accident event
+ - Columns describe the accident event
+ - Each row is a unique accident event
  
 IRS Dataset:
  - 153 columns and 1 million rows
+ - Each Column is an amount for each tax variable
  - Each Zipcode has 6 rows (one for each income division)
 
 ## Feature Categories
@@ -105,7 +107,7 @@ IRS Dataset:
 
 #### Weather Condition: 
 A naive analysis of how the weather conditions relate to accident counts would show that there is no significant increase in accident counts during precipitation. By plotting a histogram of the weather condition counts we don't take into consideration that weather conditions are not identically distributed. 
-For example, if it doesn't snow often but there is a high accident rate when it snows, then we will not be able to see this be only observing the accident counts; the snow-accidents are eclipsed by the large number of non-snow-accidents.
+For example, if it doesn't snow often but there is a high accident rate when it snows, then we will not be able to see this by only observing the accident counts; the snow-accidents are eclipsed by the large number of non-snow-accidents.
 
 <p align="center">
   <img src="main/img/weather_vs_count.png" width = 600>
