@@ -16,10 +16,13 @@
   - [The Data](#the-data)
   - [Questions](#questions)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-  - [Weather](#weather)
-  - [Location](#location)
-  - [State](#state)
-  - [Time](#time)
+  - [Dataset Overview](#dataset-overview)
+  - [Feature Categories](#feature-categories)
+  - [Exploration](#exploration)
+    - [Weather](#weather)
+    - [Location](#location)
+    - [State](#state)
+    - [Time](#time)
 - [Conclusion](#conclusion)
 - [Citation](#citation)
 
@@ -66,7 +69,7 @@ MVP (Minimum Viable Product)
 
 # Exploratory Data Analysis
 
-## Groups
+## Dataset Overview
 
 Accident Dataset:
  - 49 columns and 3 million rows
